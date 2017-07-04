@@ -14,8 +14,31 @@
   color: white;
 }
 
-.App-intro {
+.body-wrapper {
+  display: flex;
+}
+
+.sidebar-wrapper {
+  width: 20%;
+  border: 2px solid purple;
+}
+
+/*section wrapper styles*/
+.section-wrapper {
+  border: 2 px solid green;
+}
+
+.section {
   font-size: large;
+}
+
+.section-home {
+  color: blue;
+}
+
+/*sidebar*/
+.sidebar-link {
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
