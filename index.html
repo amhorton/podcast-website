@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <title>New Wizards</title>
     <style>
 
         body {
-          background-color: #5996D5;
-          color: #eee
+          background-color: #111;
+          color: #E8BB60
         }
 
         .container {
-          height: 100vh;
+          /*height: 100vh;*/
           display: flex;
           align-items: center;
           justify-content: center;
         }
 
         .content {
-          width: 400px;
           height: 400px;
-          font-family: 'Arimo', sans-serif;
+          font-family: 'Raleway', sans-serif;
+          text-align: center;
+        }
+
+        .main-logo {
+          height: 400px;
+          background-image: url('assets/newwizards-logo.svg');
+          background-size: 100% 100%;
         }
 
         .title {
-          font-size: 36px;
+          font-size: 60px;
           font-weight: bold;
+          font-family: 'Playfair Display', serif;
           text-align: center;
           letter-spacing: 10px;
         }
 
         .paragraph {
-          padding-top: 72px;
-          font-size: 18px;
+          padding-top: 24px;
+          font-size: 24px;
+          max-width: 600px;
+          text-align: left;
         }
+
+        .link {
+          color: #BBE860;
+        }
+
+        @media(max-width: 768px) or handheld {
+          .paragraph {
+            font-size: 36px;
+          }
+          .title {
+            font-size: 84px;
+          }
+        }
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="content">
+        <div class="main-logo"></div>
         <div class="title">New Wizards</div>
-        <div class="paragraph"></div>
+        <div class="paragraph">
+          <p>Here's some test content to get you started. I love testing content. Let's get this to go on another line, just so we can see what it looks like. Don't have to go crazy though. Just need to type more.</p>
+          <p>Let's see what a link looks like. <a class="link" href="#">Here's a link.</a> Thanks for your time.</p>
+        </div>
       </div>
     </div>
   </body>
